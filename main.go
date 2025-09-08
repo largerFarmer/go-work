@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	channel "go-work/sync"
+	gorm "go-work/gorm"
 )
 
 func main() {
@@ -19,5 +19,6 @@ func main() {
 	// 		Name: "d大大",
 	// 	},
 	// }
-	channel.SyncAuto()
+	//channel.SyncAuto()
+	gorm.GormSql()
 }
